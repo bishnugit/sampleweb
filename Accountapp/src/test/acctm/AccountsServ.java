@@ -16,8 +16,6 @@ doPost(req1,res1);
 public void doPost (HttpServletRequest req,HttpServletResponse res)throws IOException,ServletException{
 	String nm = req.getParameter("userid");
 	String pwd = req.getParameter("pwd");
-	System.out.println("user name is:--->"+nm);
-	System.out.println("pwd  is:--->"+pwd);
 	if (nm != null && pwd != null){
 		if (nm.equalsIgnoreCase("Bishnu") && pwd.equalsIgnoreCase("mama")){
 		req.setAttribute("name", nm);	
